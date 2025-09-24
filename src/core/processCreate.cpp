@@ -1,5 +1,6 @@
 #include "ProcessManager.h"
 
+//Oskar
 #ifdef _WIN32
     #include <windows.h> //Windows API para crear, manejar y terminar procesos
     #include <tlhelp32.h> //Para tomar snapshots de los procesos
@@ -105,7 +106,6 @@ Devuelve el PID del proceso creado.
 
     }
     bool ProcessManager::isShortCommand(const std::string& cmd){
-        return cmd.starts_with("date") || cmd.starts_with("echo") || cmd.starts_with("whoami");
-    }
+        return cmd.starts_with("date") || cmd.starts_with("echo") || cmd.starts_with("whoami");}
 #endif
 
