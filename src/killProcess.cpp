@@ -31,6 +31,21 @@ bool ProcessManager::killProcess(int pid) {
     return true;
 }
 
-
-
 //Alan
+#elif __linux__
+    //Por Implementar...
+    #include <signal.h>
+    #include <string>
+    #include <iostream>
+    #include <vector>
+    #include "ProcessManager.h"
+    
+    bool ProcessManager::killProcess(int pid) {
+        if(kill(pid, SIGTERM==-1)){
+            perror("Kill failed");
+            return false;
+        }
+        return true;
+    }
+
+#endif

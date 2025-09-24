@@ -1,3 +1,5 @@
+//Oskar
+
 #ifdef _WIN32
 #include <windows.h> //Windows API para crear, manejar y terminar procesos
 #include <tlhelp32.h> //Para tomar snapshots de los procesos
