@@ -1,4 +1,12 @@
 #Oskar
+
+
+# Este archivo configura el proyecto AdministradorProcesos usando CMake 
+# para compilar código C++ moderno (estándar C++20) en entornos multiplataforma 
+# (Windows y Unix). Define cómo construir el ejecutable principal, especifica 
+# los archivos fuente, incluye los directorios necesarios y ajusta el enlace con
+# bibliotecas del sistema según el entorno.
+
 cmake_minimum_required(VERSION 3.15)
 project(AdministradorProcesos CXX)
 
