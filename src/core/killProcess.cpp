@@ -45,6 +45,7 @@ bool ProcessManager::killProcess(int pid) {
             perror("Kill failed");
             return false;
         }
+        kill(pid, SIGKILL);
         return true;
     }
 
