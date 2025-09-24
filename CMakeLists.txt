@@ -20,7 +20,7 @@ endif()
 add_executable(AdministradorProcesos
     src/main.cpp
     src/core/listingProcess.cpp
-    src/core/ProcessCreate.cpp
+    src/core/processCreate.cpp
     src/core/killProcess.cpp
 )
 
